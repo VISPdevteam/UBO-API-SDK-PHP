@@ -21,8 +21,8 @@ use \Ubo\Client\Api\UboApi;
 $client = new UboApi();
 
 
-// Retrieve the token first from your Client Keys that was issued to you from visp.net
-$identity = $client->getIdentity("e88257c5-e13c-46c1-996c-8a3a46aa7737", "K4fX9CTSFYdq3+tSpO9VabWmCM3SM2js");
+// Retrieve the token first from your Client Keys that was issued to you from visp.net and authorize the client
+$identity = $client->getIdentity("[YOUR-CLIENT-ID]", "[YOUR-CLIENT-SECRET]");
 $client->authorize($identity);
 
 
